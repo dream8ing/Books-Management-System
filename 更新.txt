@@ -1,0 +1,20 @@
+1、增加了阿里云库，成功
+2、替换成MYSQL
+3、[ERROR] Nested in org.springframework.jdbc.CannotGetJdbcConnectionException: 
+Could not get JDBC Connection; nested exception is org.apache.commons.dbcp.SQLNestedException: 
+Cannot create PoolableConnectionFactory (Could not create connection to database server.):
+java.lang.NullPointerException
+
+4、db.properties未添加
+jdbc.driver=com.mysql.cj.jdbc.Driver
+jdbc.url=jdbc:mysql://localhost:3306/company?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false&allowMultiQueries=true&allowPublicKeyRetrieval=true
+jdbc.username=root
+jdbc.password=root
+
+5、增加pomMYSQL驱动，成功
+6、book-context.xml 连接代码修改，成功
+mysql账号root 密码123456
+7、将 bookdao.java注释 resultSet.beforeFirst();一行，成功
+
+
+
